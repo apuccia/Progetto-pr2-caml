@@ -10,21 +10,21 @@ manipolare come dati primitivi dizionari di elementi, ovvero una collezione di c
 Assumiamo che la chiave sia un identificatore.
 
 Introduciamo brevemente la sintassi concreta per operare con dizionari.
-  - *creazione di un dizionario vuoto* \
+  - **creazione di un dizionario vuoto** \
     my_dict = {} \
     :- my_dict {}
 
-  - *creazione di un dizionario con valori* \
+  - **creazione di un dizionario con valori** \
     my_dict = {'name': 'Giovanni', 'matricola': 123456} \
     :- my_dict = {'name': 'Giovanni', 'matricola': 123456}
 
-  - *accedere a un elemento di un dizionario* \
+  - **accedere a un elemento di un dizionario** \
     my_dict['name']) \
     :- 'Giovanni' \
     my_dict('matricola') \
     :- 123456
 
-  - *operazioni (dizionari sono immutable)* \
+  - **operazioni (dizionari sono immutable)** \
     my_dict1 = my_dict['età'] = 22 \
     -: my_dict1{'età': 22,'name': 'Giovanni', 'matricola': 123456} \
     my_dict2 = rm(my_dict1, 'name') \
